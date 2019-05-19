@@ -1,0 +1,35 @@
+//! **************************************************************************
+// Written by: Map M.53d on Fri Mar 02 10:49:31 2012
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "btn0" LOCATE = SITE "G12" LEVEL 1;
+COMP "btn1" LOCATE = SITE "C11" LEVEL 1;
+COMP "btn2" LOCATE = SITE "M4" LEVEL 1;
+COMP "btn3" LOCATE = SITE "A7" LEVEL 1;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "switch" LOCATE = SITE "P11" LEVEL 1;
+PIN switch_pin<0> = BEL "switch" PINNAME PAD;
+PIN "switch_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "leds<0>" LOCATE = SITE "M5" LEVEL 1;
+COMP "leds<1>" LOCATE = SITE "M11" LEVEL 1;
+COMP "leds<2>" LOCATE = SITE "P7" LEVEL 1;
+COMP "leds<3>" LOCATE = SITE "P6" LEVEL 1;
+COMP "leds<4>" LOCATE = SITE "N5" LEVEL 1;
+COMP "leds<5>" LOCATE = SITE "N4" LEVEL 1;
+COMP "leds<6>" LOCATE = SITE "P4" LEVEL 1;
+COMP "leds<7>" LOCATE = SITE "G1" LEVEL 1;
+COMP "sevensegs<0>" LOCATE = SITE "M12" LEVEL 1;
+COMP "sevensegs<1>" LOCATE = SITE "L13" LEVEL 1;
+COMP "sevensegs<2>" LOCATE = SITE "P12" LEVEL 1;
+COMP "sevensegs<3>" LOCATE = SITE "N11" LEVEL 1;
+COMP "sevensegs<4>" LOCATE = SITE "N14" LEVEL 1;
+COMP "sevensegs<5>" LOCATE = SITE "H12" LEVEL 1;
+COMP "sevensegs<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "anodos<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "anodos<1>" LOCATE = SITE "J12" LEVEL 1;
+COMP "anodos<2>" LOCATE = SITE "M13" LEVEL 1;
+COMP "anodos<3>" LOCATE = SITE "K14" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

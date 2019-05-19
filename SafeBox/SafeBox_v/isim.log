@@ -1,0 +1,15 @@
+ISim log file
+Running: E:\Universidad\Semestre 6\Electronica II\Safe Box\SafeBox_v\tb_PTD_isim_beh.exe -gui -tclbatch isim.cmd -wdb E:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox_v/tb_PTD_isim_beh.wdb 
+ISim M.81d (signature 0x12940baa)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

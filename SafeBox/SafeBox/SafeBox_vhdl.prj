@@ -1,0 +1,6 @@
+vhdl work "D:\Universidad\Semestre 6\Electronica II\Safe Box\SafeBox\FF_D.vhd"
+vhdl work "D:\Universidad\Semestre 6\Electronica II\Safe Box\SafeBox\Registros.vhd"
+vhdl work "D:\Universidad\Semestre 6\Electronica II\Safe Box\SafeBox\Display.vhd"
+vhdl work "D:\Universidad\Semestre 6\Electronica II\Safe Box\SafeBox\Detector_de_Pulso.vhd"
+vhdl work "D:\Universidad\Semestre 6\Electronica II\Safe Box\SafeBox\Decodificador.vhd"
+vhdl work "D:\Universidad\Semestre 6\Electronica II\Safe Box\SafeBox\SafeBox.vhd"

@@ -1,0 +1,5 @@
+set -tmpdir "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/xst/projnav.tmp"
+set -xsthdpdir "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/xst"
+elaborate
+-ifn Display.prj
+-ifmt mixed

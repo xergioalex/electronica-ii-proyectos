@@ -1,0 +1,130 @@
+--------------------------------------------------------------------------------
+Release 12.1 Trace  (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\12.1\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml SafeBox.twx SafeBox.ncd -o SafeBox.twr SafeBox.pcf -ucf
+Pines.ucf
+
+Design file:              SafeBox.ncd
+Physical constraint file: SafeBox.pcf
+Device,package,speed:     xc3s100e,cp132,-4 (PRODUCTION 1.27 2010-04-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock btn3
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+switch      |    0.828(R)|    2.088(R)|pulse3            |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+btn0        |    4.435(R)|    0.628(R)|clk_BUFGP         |   0.000|
+btn1        |    4.449(R)|    0.547(R)|clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock btn3 to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+leds<0>     |    9.862(R)|pulse3            |   0.000|
+leds<1>     |   10.440(R)|pulse3            |   0.000|
+leds<2>     |   10.444(R)|pulse3            |   0.000|
+leds<3>     |    9.877(R)|pulse3            |   0.000|
+leds<4>     |   10.729(R)|pulse3            |   0.000|
+leds<5>     |   11.007(R)|pulse3            |   0.000|
+leds<6>     |   10.137(R)|pulse3            |   0.000|
+leds<7>     |    9.678(R)|pulse3            |   0.000|
+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+anodos<0>   |    8.404(R)|clk_BUFGP         |   0.000|
+anodos<1>   |    7.675(R)|clk_BUFGP         |   0.000|
+anodos<2>   |    8.436(R)|clk_BUFGP         |   0.000|
+anodos<3>   |    7.996(R)|clk_BUFGP         |   0.000|
+sevensegs<0>|    9.699(R)|clk_BUFGP         |   0.000|
+sevensegs<1>|    9.943(R)|clk_BUFGP         |   0.000|
+sevensegs<2>|   10.706(R)|clk_BUFGP         |   0.000|
+sevensegs<3>|   10.628(R)|clk_BUFGP         |   0.000|
+sevensegs<4>|   10.212(R)|clk_BUFGP         |   0.000|
+sevensegs<5>|    9.738(R)|clk_BUFGP         |   0.000|
+sevensegs<6>|    9.656(R)|clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock btn2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+btn2           |    3.456|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock btn3
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+btn3           |    3.840|         |         |         |
+clk            |    5.318|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+btn2           |    6.769|    1.036|         |         |
+btn3           |    0.708|    0.708|         |         |
+clk            |    4.555|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Fri Mar 02 10:49:57 2012 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 103 MB
+
+
+

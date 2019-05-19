@@ -1,0 +1,47 @@
+V3 23
+FL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Decodificador.vhd" 2012/01/31.15:15:19 M.81d
+EN work/Decodificador 1328044059 \
+      FL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Decodificador.vhd" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/std_logic_arith 1290154109 \
+      PB ieee/STD_LOGIC_UNSIGNED 1290154110
+AR work/Decodificador/Behavioral 1328044060 \
+      FL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Decodificador.vhd" \
+      EN work/Decodificador 1328044059
+FL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Detector_de_Pulso.vhd" 2012/01/31.16:01:59 M.81d
+EN work/Detector_de_Pulso 1328044057 \
+      FL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Detector_de_Pulso.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/Detector_de_Pulso/Behavioral 1328044058 \
+      FL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Detector_de_Pulso.vhd" \
+      EN work/Detector_de_Pulso 1328044057 CP FF_D
+FL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Display.vhd" 2012/01/31.15:57:07 M.81d
+EN work/Display 1328044063 \
+      FL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Display.vhd" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/std_logic_arith 1290154109 \
+      PB ieee/STD_LOGIC_UNSIGNED 1290154110
+AR work/Display/Behavioral 1328044064 \
+      FL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Display.vhd" \
+      EN work/Display 1328044063
+FL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/FF_D.vhd" 2012/01/31.16:02:22 M.81d
+EN work/FF_D 1328044055 \
+      FL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/FF_D.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/FF_D/Behavioral 1328044056 \
+      FL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/FF_D.vhd" \
+      EN work/FF_D 1328044055
+FL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Registros.vhd" 2012/01/31.15:33:09 M.81d
+EN work/Operador 1328044061 \
+      FL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Registros.vhd" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/std_logic_arith 1290154109 \
+      PB ieee/STD_LOGIC_UNSIGNED 1290154110
+AR work/Operador/Behavioral 1328044062 \
+      FL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Registros.vhd" \
+      EN work/Operador 1328044061
+FL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/SafeBox.vhd" 2012/01/31.16:06:32 M.81d
+EN work/SafeBox 1328044065 \
+      FL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/SafeBox.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/SafeBox/Behavioral 1328044066 \
+      FL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/SafeBox.vhd" \
+      EN work/SafeBox 1328044065 CP Detector_de_Pulso CP Decodificador CP Operador \
+      CP Display

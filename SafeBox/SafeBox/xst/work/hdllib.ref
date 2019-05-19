@@ -1,0 +1,12 @@
+EN display NULL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Display.vhd" sub00/vhpl00 1328044063
+EN operador NULL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Registros.vhd" sub00/vhpl08 1328044061
+AR display behavioral "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Display.vhd" sub00/vhpl01 1328044064
+AR operador behavioral "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Registros.vhd" sub00/vhpl09 1328044062
+EN ff_d NULL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/FF_D.vhd" sub00/vhpl02 1328044055
+AR ff_d behavioral "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/FF_D.vhd" sub00/vhpl03 1328044056
+EN detector_de_pulso NULL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Detector_de_Pulso.vhd" sub00/vhpl04 1328044057
+AR detector_de_pulso behavioral "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Detector_de_Pulso.vhd" sub00/vhpl05 1328044058
+EN decodificador NULL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Decodificador.vhd" sub00/vhpl06 1328044059
+AR safebox behavioral "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/SafeBox.vhd" sub00/vhpl11 1328044066
+EN safebox NULL "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/SafeBox.vhd" sub00/vhpl10 1328044065
+AR decodificador behavioral "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Decodificador.vhd" sub00/vhpl07 1328044060

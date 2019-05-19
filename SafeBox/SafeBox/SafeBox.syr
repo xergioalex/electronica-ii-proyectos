@@ -1,0 +1,538 @@
+Release 12.4 - xst M.81d (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: SafeBox.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SafeBox.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SafeBox"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-tq144
+
+---- Source Options
+Top Module Name                    : SafeBox
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/FF_D.vhd" in Library work.
+Architecture behavioral of Entity ff_d is up to date.
+Compiling vhdl file "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Detector_de_Pulso.vhd" in Library work.
+Architecture behavioral of Entity detector_de_pulso is up to date.
+Compiling vhdl file "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Decodificador.vhd" in Library work.
+Architecture behavioral of Entity decodificador is up to date.
+Compiling vhdl file "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Registros.vhd" in Library work.
+Architecture behavioral of Entity operador is up to date.
+Compiling vhdl file "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Display.vhd" in Library work.
+Architecture behavioral of Entity display is up to date.
+Compiling vhdl file "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/SafeBox.vhd" in Library work.
+Architecture behavioral of Entity safebox is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <SafeBox> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Detector_de_Pulso> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Decodificador> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Operador> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Display> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FF_D> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <SafeBox> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/SafeBox.vhd" line 76: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <r0>
+Entity <SafeBox> analyzed. Unit <SafeBox> generated.
+
+Analyzing Entity <Detector_de_Pulso> in library <work> (Architecture <behavioral>).
+Entity <Detector_de_Pulso> analyzed. Unit <Detector_de_Pulso> generated.
+
+Analyzing Entity <FF_D> in library <work> (Architecture <behavioral>).
+Entity <FF_D> analyzed. Unit <FF_D> generated.
+
+Analyzing Entity <Decodificador> in library <work> (Architecture <behavioral>).
+Entity <Decodificador> analyzed. Unit <Decodificador> generated.
+
+Analyzing Entity <Operador> in library <work> (Architecture <behavioral>).
+Entity <Operador> analyzed. Unit <Operador> generated.
+
+Analyzing Entity <Display> in library <work> (Architecture <behavioral>).
+Entity <Display> analyzed. Unit <Display> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Decodificador>.
+    Related source file is "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Decodificador.vhd".
+    Found 3-bit up counter for signal <cont>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <Decodificador> synthesized.
+
+
+Synthesizing Unit <Operador>.
+    Related source file is "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Registros.vhd".
+    Found 4-bit up counter for signal <reg>.
+    Found 4-bit subtractor for signal <reg$addsub0000> created at line 28.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <Operador> synthesized.
+
+
+Synthesizing Unit <Display>.
+    Related source file is "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Display.vhd".
+    Found 16x7-bit ROM for signal <salida>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <Display> synthesized.
+
+
+Synthesizing Unit <FF_D>.
+    Related source file is "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/FF_D.vhd".
+    Found 1-bit register for signal <salida>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <FF_D> synthesized.
+
+
+Synthesizing Unit <Detector_de_Pulso>.
+    Related source file is "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/Detector_de_Pulso.vhd".
+Unit <Detector_de_Pulso> synthesized.
+
+
+Synthesizing Unit <SafeBox>.
+    Related source file is "D:/Universidad/Semestre 6/Electronica II/Safe Box/SafeBox/SafeBox.vhd".
+WARNING:Xst:1306 - Output <leds> is never assigned.
+WARNING:Xst:647 - Input <sw> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <r3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <r2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <r1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pulso3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pulso2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pulso1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pulso0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 4-bit latch for signal <r_display>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <SafeBox> synthesized.
+
+WARNING:Xst:524 - All outputs of the instance <Detector0> of the block <Detector_de_Pulso> are unconnected in block <SafeBox>.
+   This instance will be removed from the design along with all underlying logic
+WARNING:Xst:524 - All outputs of the instance <Detector1> of the block <Detector_de_Pulso> are unconnected in block <SafeBox>.
+   This instance will be removed from the design along with all underlying logic
+WARNING:Xst:524 - All outputs of the instance <Detector2> of the block <Detector_de_Pulso> are unconnected in block <SafeBox>.
+   This instance will be removed from the design along with all underlying logic
+WARNING:Xst:524 - All outputs of the instance <Detector3> of the block <Detector_de_Pulso> are unconnected in block <SafeBox>.
+   This instance will be removed from the design along with all underlying logic
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 4
+ 4-bit subtractor                                      : 4
+# Counters                                             : 5
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 4
+# Latches                                              : 1
+ 4-bit latch                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <Operador2> is unconnected in block <SafeBox>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Operador3> is unconnected in block <SafeBox>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Operador4> is unconnected in block <SafeBox>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 4
+ 4-bit subtractor                                      : 4
+# Counters                                             : 5
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 4
+# Latches                                              : 1
+ 4-bit latch                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <SafeBox> ...
+
+Optimizing unit <Operador> ...
+WARNING:Xst:2677 - Node <Operador4/reg_3> of sequential type is unconnected in block <SafeBox>.
+WARNING:Xst:2677 - Node <Operador4/reg_2> of sequential type is unconnected in block <SafeBox>.
+WARNING:Xst:2677 - Node <Operador4/reg_1> of sequential type is unconnected in block <SafeBox>.
+WARNING:Xst:2677 - Node <Operador4/reg_0> of sequential type is unconnected in block <SafeBox>.
+WARNING:Xst:2677 - Node <Operador3/reg_3> of sequential type is unconnected in block <SafeBox>.
+WARNING:Xst:2677 - Node <Operador3/reg_2> of sequential type is unconnected in block <SafeBox>.
+WARNING:Xst:2677 - Node <Operador3/reg_1> of sequential type is unconnected in block <SafeBox>.
+WARNING:Xst:2677 - Node <Operador3/reg_0> of sequential type is unconnected in block <SafeBox>.
+WARNING:Xst:2677 - Node <Operador2/reg_3> of sequential type is unconnected in block <SafeBox>.
+WARNING:Xst:2677 - Node <Operador2/reg_2> of sequential type is unconnected in block <SafeBox>.
+WARNING:Xst:2677 - Node <Operador2/reg_1> of sequential type is unconnected in block <SafeBox>.
+WARNING:Xst:2677 - Node <Operador2/reg_0> of sequential type is unconnected in block <SafeBox>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SafeBox, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 7
+ Flip-Flops                                            : 7
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : SafeBox.ngr
+Top Level Output File Name         : SafeBox
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 25
+
+Cell Usage :
+# BELS                             : 28
+#      INV                         : 5
+#      LUT2                        : 2
+#      LUT3                        : 9
+#      LUT3_L                      : 1
+#      LUT4                        : 9
+#      LUT4_L                      : 2
+# FlipFlops/Latches                : 11
+#      FDR                         : 3
+#      FDRE                        : 4
+#      LDCP_1                      : 4
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 13
+#      IBUF                        : 2
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100etq144-5 
+
+ Number of Slices:                       13  out of    960     1%  
+ Number of Slice Flip Flops:             11  out of   1920     0%  
+ Number of 4 input LUTs:                 28  out of   1920     1%  
+ Number of IOs:                          25
+ Number of bonded IOBs:                  15  out of    108    13%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------+------------------------+-------+
+Clock Signal                         | Clock buffer(FF name)  | Load  |
+-------------------------------------+------------------------+-------+
+an3_OBUF(Dec/Mcount_cont_xor<2>121:O)| NONE(*)(r_display_0)   | 4     |
+btn2                                 | BUFGP                  | 3     |
+clk                                  | BUFGP                  | 4     |
+-------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------+------------------------+-------+
+Control Signal                                     | Buffer(FF name)        | Load  |
+---------------------------------------------------+------------------------+-------+
+Operador1/Mcount_reg(r_display_0__and00001_INV_0:O)| NONE(r_display_0)      | 1     |
+Operador1/reg_0(Operador1/reg_0:Q)                 | NONE(r_display_0)      | 1     |
+Operador1/reg_1(Operador1/reg_1:Q)                 | NONE(r_display_1)      | 1     |
+Operador1/reg_2(Operador1/reg_2:Q)                 | NONE(r_display_2)      | 1     |
+Operador1/reg_3(Operador1/reg_3:Q)                 | NONE(r_display_3)      | 1     |
+r_display_1__and0000(r_display_1__and00001_INV_0:O)| NONE(r_display_1)      | 1     |
+r_display_2__and0000(r_display_2__and00001_INV_0:O)| NONE(r_display_2)      | 1     |
+r_display_3__and0000(r_display_3__and00001_INV_0:O)| NONE(r_display_3)      | 1     |
+---------------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 3.781ns (Maximum Frequency: 264.452MHz)
+   Minimum input arrival time before clock: 4.448ns
+   Maximum output required time after clock: 5.554ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'btn2'
+  Clock period: 3.168ns (frequency: 315.676MHz)
+  Total number of paths / destination ports: 15 / 6
+-------------------------------------------------------------------------
+Delay:               3.168ns (Levels of Logic = 1)
+  Source:            Dec/cont_0 (FF)
+  Destination:       Dec/cont_0 (FF)
+  Source Clock:      btn2 rising
+  Destination Clock: btn2 rising
+
+  Data Path: Dec/cont_0 to Dec/cont_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              8   0.514   0.795  Dec/cont_0 (Dec/cont_0)
+     LUT3:I0->O            3   0.612   0.451  Dec/cont_cmp_eq00001 (Dec/cont_cmp_eq0000)
+     FDR:R                     0.795          Dec/cont_0
+    ----------------------------------------
+    Total                      3.168ns (1.921ns logic, 1.247ns route)
+                                       (60.6% logic, 39.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.781ns (frequency: 264.452MHz)
+  Total number of paths / destination ports: 29 / 8
+-------------------------------------------------------------------------
+Delay:               3.781ns (Levels of Logic = 2)
+  Source:            Operador1/reg_0 (FF)
+  Destination:       Operador1/reg_3 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Operador1/reg_0 to Operador1/reg_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             8   0.514   0.646  Operador1/reg_0 (Operador1/reg_0)
+     LUT4_L:I3->LO         1   0.612   0.103  Operador1/reg_and0000_SW0 (N7)
+     LUT4:I3->O            4   0.612   0.499  Operador1/reg_and0000 (Operador1/reg_and0000)
+     FDRE:R                    0.795          Operador1/reg_0
+    ----------------------------------------
+    Total                      3.781ns (2.533ns logic, 1.248ns route)
+                                       (67.0% logic, 33.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 20 / 11
+-------------------------------------------------------------------------
+Offset:              4.448ns (Levels of Logic = 3)
+  Source:            btn1 (PAD)
+  Destination:       Operador1/reg_3 (FF)
+  Destination Clock: clk rising
+
+  Data Path: btn1 to Operador1/reg_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.106   0.721  btn1_IBUF (btn1_IBUF)
+     LUT4_L:I0->LO         1   0.612   0.103  Operador1/reg_and0000_SW0 (N7)
+     LUT4:I3->O            4   0.612   0.499  Operador1/reg_and0000 (Operador1/reg_and0000)
+     FDRE:R                    0.795          Operador1/reg_0
+    ----------------------------------------
+    Total                      4.448ns (3.125ns logic, 1.323ns route)
+                                       (70.3% logic, 29.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'btn2'
+  Total number of paths / destination ports: 12 / 4
+-------------------------------------------------------------------------
+Offset:              5.554ns (Levels of Logic = 2)
+  Source:            Dec/cont_2 (FF)
+  Destination:       an3 (PAD)
+  Source Clock:      btn2 rising
+
+  Data Path: Dec/cont_2 to an3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.514   0.721  Dec/cont_2 (Dec/cont_2)
+     LUT3:I0->O            5   0.612   0.538  Dec/Mcount_cont_xor<2>121 (an3_OBUF)
+     OBUF:I->O                 3.169          an3_OBUF (an3)
+    ----------------------------------------
+    Total                      5.554ns (4.295ns logic, 1.259ns route)
+                                       (77.3% logic, 22.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'an3_OBUF'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              5.480ns (Levels of Logic = 2)
+  Source:            r_display_0 (LATCH)
+  Destination:       display_out<6> (PAD)
+  Source Clock:      an3_OBUF rising
+
+  Data Path: r_display_0 to display_out<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCP_1:G->Q           7   0.588   0.754  r_display_0 (r_display_0)
+     LUT4:I0->O            1   0.612   0.357  disp/Mrom_salida21 (display_out_2_OBUF)
+     OBUF:I->O                 3.169          display_out_2_OBUF (display_out<2>)
+    ----------------------------------------
+    Total                      5.480ns (4.369ns logic, 1.111ns route)
+                                       (79.7% logic, 20.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.66 secs
+ 
+--> 
+
+Total memory usage is 245504 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   30 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

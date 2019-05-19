@@ -1,0 +1,3 @@
+verilog isim_temp "SafeBox.v"
+verilog isim_temp "SafeBox_tb.v"
+verilog isim_temp "C:/Xilinx/12.4/ISE_DS/ISE//verilog/src/glbl.v"

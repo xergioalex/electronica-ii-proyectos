@@ -1,0 +1,6 @@
+vhdl work "FF_D.vhd"
+vhdl work "Registros.vhd"
+vhdl work "Display.vhd"
+vhdl work "Detector_de_Pulso.vhd"
+vhdl work "Decodificador.vhd"
+vhdl work "SafeBox.vhd"

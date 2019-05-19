@@ -1,0 +1,39 @@
+# This file is a general .ucf for Basys rev E board
+# To use it in a project:
+# - remove or comment the lines corresponding to unused pins
+# - rename the used signals according to the project
+
+
+
+NET "anodos[0]" LOC = F12;
+NET "anodos[1]" LOC = J12;
+NET "anodos[2]" LOC = M13;
+NET "anodos[3]" LOC = K14;
+
+NET "btn3" LOC = A7;
+NET "btn2" LOC = M4;
+NET "btn1" LOC = C11;
+NET "btn0" LOC = G12;
+
+NET "sevensegs[6]" LOC = L14;
+NET "sevensegs[5]" LOC = H12;
+NET "sevensegs[4]" LOC = N14;
+NET "sevensegs[3]" LOC = N11;
+NET "sevensegs[2]" LOC = P12;
+NET "sevensegs[1]" LOC = L13;
+NET "sevensegs[0]" LOC = M12;
+
+NET "switch" LOC = P11;
+
+NET "clk" LOC = B8;
+
+NET "switch" CLOCK_DEDICATED_ROUTE = FALSE; 
+
+NET "leds[0]" LOC = M5;
+NET "leds[1]" LOC = M11;
+NET "leds[2]" LOC = P7;
+NET "leds[3]" LOC = P6;
+NET "leds[4]" LOC = N5;
+NET "leds[5]" LOC = N4;
+NET "leds[6]" LOC = P4;
+NET "leds[7]" LOC = G1;
